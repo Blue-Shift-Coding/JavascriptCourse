@@ -1,5 +1,11 @@
 # Javascript – Lesson 1: Graphics
 
+### Setup & Familiarisation
+
+Log in to the [BlueShiftCoding](http://editor.blueshiftcoding.com/) editor with your username and password.
+We will be using the JavaScript and Output tabs, so make sure the others are hidden by clicking on them at the top.
+From the [Set Template] menu, choose [Lesson 1: Bonsai].
+
 
 ### Starting your first script
 
