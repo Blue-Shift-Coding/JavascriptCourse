@@ -1,6 +1,5 @@
 # JavascriptCourse
-Code examples for the JavascriptCourse
-
+This repository details the Code examples used in the Javascript Course
 
 ###Code examples by lesson
 
@@ -8,3 +7,5 @@ Code examples for the JavascriptCourse
 - [lesson2](lesson2.md)
 
 ###Resources
+
+- Colors that play well together, just click and paste! [Flat UI Colors](https://flatuicolors.com/)
