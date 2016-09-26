@@ -8,4 +8,4 @@ This repository details the Code examples used in the Javascript Course
 
 ###Resources
 
-- Colors that play well together, just click and paste! [Flat UI Colors](https://flatuicolors.com/)
+- Colors that play well together, just click and paste into your code! [Flat UI Colors](https://flatuicolors.com/)
