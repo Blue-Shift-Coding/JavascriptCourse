@@ -38,7 +38,12 @@ polaris.animate(new KeyframeAnimation("6s", {
 ));
 ```
 
+This KeyframeAnimation allows you to set different Keyframes at different point in the animation. The computer will then calculate what it needs to show at each point between them.
+
 ### Different shapes
+
+Here a few different shapes you can use. <> mean you can leave it out if you want:
+
 
 ```sh
 Circle(x, y, radius)
@@ -46,3 +51,4 @@ Rect(x, y, width, height, <cornerRadius>)
 Star(x, y, radius, rays, <factor>)
 Polygon(x, y, radius, sides)
 ```
+## Don't forget to play around with the colors and numbers to get different effects, just like we did in class!
