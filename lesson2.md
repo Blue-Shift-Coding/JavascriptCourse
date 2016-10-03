@@ -88,3 +88,19 @@ Four variables?
 - Somewhere we are adding two numbers together?
 - Somewhere we are subtracting one number from another?
 
+##Multiplication tables
+
+Now, close the Console and open the Output again.
+
+Delete the code you just wrote, containing your name, and writing information to the console about how likely you are to be US president.
+
+Can you change the other code (the code that shows the fancy text), so that instead of the message, it outputs multiples of two from 1 to 40?
+
+##JavaScript Arithmetic Operators 
+
+Operator | Description | Example
+--- | --- | ---
+- |	Subtraction |	x = y - 2
+* |	Multiplication |	x = y * 2
+/ |	Division |	x = y / 2
+%	Modulus | (division remainder) |	x = y % 2
