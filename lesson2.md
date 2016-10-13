@@ -19,7 +19,7 @@ Click ‘Set Template’ and choose ‘Lesson 2 - strings and numbers’.
 
 In Javascript, if we want to store some data to use later in the program, we can put it in something called a variable.  We can always do this using the keyword var and an equals sign (=).  For example:
 
-```ch
+```js
 var message = "Javascript is awesome";
 var a = 0;
 ```
@@ -42,7 +42,7 @@ The console lets us output data for us to see, but not the public (although a me
 
 Underneath your code in the Javascript panel, add two variables containing your first name and your last name, and write the total length to the console.
 
-```ch
+```js
 var firstName = "Jo";
 var lastName = "Bloggs";
 console.log("Total name length is "+(firstName.length + lastName.length));
@@ -51,7 +51,7 @@ Click run in the console panel and you should see the total length of your name 
 
 Now try typing out the rest of this code, to output your chance of being president, according to Uri Geller.
 
-```ch
+```js
 var firstName = "Jo";
 var lastName = "Bloggs";
 console.log("Total name length is "+(firstName.length + lastName.length));
