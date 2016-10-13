@@ -36,7 +36,7 @@ Here are some things you can try:
 
 The word ‘while’ asks Javascript to repeat some code over and over.  Look more closely:
 
-```ch
+```js
 while (condition) {
   // Code
 }
@@ -45,7 +45,7 @@ What happens is that the Code is run over and over again until the condition sto
 
 Try out this loop, which will output the 16 times table:
 
-```ch
+```js
 var i = 0;
 while (i < 10) {
   console.log((i + 1) * 16);
@@ -58,7 +58,7 @@ Can you write each line to the console in full?  (e.g. “1 x 16 is 16”)
 
 This loop takes a word and writes it out to the console spelled backwards. Have a go.
 
-```ch
+```js
 var word = "javascript";
 var numLetters = word.length;
 var newWord = "";
@@ -76,9 +76,9 @@ Hint: word[0] is the first letter in a word; word[1] is the second; word[2] is t
 
 ##A shortcut
 
-Instead of ```ch i = i + 1``` you can use any of the following to do the same thing.  Try swapping these into the loops above, in the right place.
+Instead of ```js i = i + 1``` you can use any of the following to do the same thing.  Try swapping these into the loops above, in the right place.
 
-```ch
+```js
 i += 1;
 i++;
 ++i;
@@ -87,14 +87,14 @@ i++;
 
 To save yourself some typing, you can often write loops using for instead of while.  Have a look; this loop counts from 1 to 10.
 
-```ch
+```js
 for (var i = 0; i < 10; i++) {
   console.log(i + 1);
 }
 ```
 In general, here is the pattern for a for-loop:
 
-```ch
+```js
 for (initialisation; condition; increment) {
   // Code
 }
