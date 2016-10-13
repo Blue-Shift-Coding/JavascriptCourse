@@ -9,7 +9,7 @@ From the [Set Template] menu, choose [Lesson 1: Bonsai].
 
 ### Starting your first script
 
-```sh
+```js
 go(function() {
   stage.setBackgroundColor('black');
   var polaris = new Star(250,150,20,5,2);
@@ -21,7 +21,7 @@ go(function() {
 
 Add the following line just after: polaris.addTo(stage);:
 
-```sh
+```js
 polaris.animate('3s', {factor:5, x:300, rotation:Math.PI});
 ```
 
@@ -29,7 +29,7 @@ polaris.animate('3s', {factor:5, x:300, rotation:Math.PI});
 
 Let’s use a more complicated method of animating. Delete any .animate lines, and write this:
 
-```sh
+```js
 polaris.animate(new KeyframeAnimation("6s", {
     "0%": {radius:0, fillColor:"green", rotation:0},
     "50%": {radius:100, fillColor:"blue", rotation:Math.PI},
@@ -45,7 +45,7 @@ This KeyframeAnimation allows you to set different Keyframes at different point 
 Here a few different shapes you can use. <> mean you can leave it out if you want:
 
 
-```sh
+```js
 Circle(x, y, radius)
 Rect(x, y, width, height, <cornerRadius>)
 Star(x, y, radius, rays, <factor>)
