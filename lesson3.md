@@ -10,7 +10,7 @@ Click ‘Set Template’ and choose ‘Lesson 3 – Flow Control’.
 
 ##Making the Game
 
-```ch
+```js
 while (tries < 3 && !defused) {
   var wireNumber = prompt("Which wire to cut?");
 
