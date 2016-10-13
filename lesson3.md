@@ -27,3 +27,82 @@ if (defused) {
   alert("You failed!");
 }
 ```
+Here are some things you can try:
+- Can you change which wire should be cut?
+- Can you give yourself more tries (or fewer!)?
+- Can you change the messages?
+
+##More On Loops
+
+The word ‘while’ asks Javascript to repeat some code over and over.  Look more closely:
+
+```ch
+while (condition) {
+  // Code
+}
+```
+What happens is that the Code is run over and over again until the condition stops being true.  The computer checks whether or not the condition is true before each time it runs the code (each time it runs the code is called an iteration).
+
+Try out this loop, which will output the 16 times table:
+
+```ch
+var i = 0;
+while (i < 10) {
+  console.log((i + 1) * 16);
+  i = i + 1;
+}
+```
+
+Can you change which times-table it is?
+Can you write each line to the console in full?  (e.g. “1 x 16 is 16”)
+
+This loop takes a word and writes it out to the console spelled backwards. Have a go.
+
+```ch
+var word = "javascript";
+var numLetters = word.length;
+var newWord = "";
+var i = 0;
+while (i < numLetters) {
+  newWord = newWord + word[numLetters - 1 - i];
+ i = i + 1;
+}
+console.log(newWord);
+```
+
+Can you see out how it works?
+
+Hint: word[0] is the first letter in a word; word[1] is the second; word[2] is the third, etc.
+
+##A shortcut
+
+Instead of ```ch i = i + 1``` you can use any of the following to do the same thing.  Try swapping these into the loops above, in the right place.
+
+```ch
+i += 1;
+i++;
+++i;
+```
+##For Loops
+
+To save yourself some typing, you can often write loops using for instead of while.  Have a look; this loop counts from 1 to 10.
+
+```ch
+for (var i = 0; i < 10; i++) {
+  console.log(i + 1);
+}
+```
+In general, here is the pattern for a for-loop:
+
+```ch
+for (initialisation; condition; increment) {
+  // Code
+}
+```
+- The initialisation is run before the loop.
+- The condition is checked between each iteration, to see if it is true.
+- The increment happens between each iteration.
+
+If you have time, why not try to convert some of our earlier while-loops above into for-loop format?
+
+
