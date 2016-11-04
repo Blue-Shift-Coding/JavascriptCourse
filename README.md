@@ -7,6 +7,7 @@ This repository details the Code examples used in the Javascript Course
 - [lesson2](lesson2.md)
 - [lesson3](lesson3.md)
 - [lesson4](lesson4.md)
+- [lesson5](lesson5.md)
 
 ###Resources
 
