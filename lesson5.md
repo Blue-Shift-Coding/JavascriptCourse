@@ -17,7 +17,9 @@ We are going to do some more graphics work this lesson, using “BonsaiJS” aga
 In particular, we will be doing some things that would take a lot of typing were it not for the fact that we now know how to program using variables and loops.  So we are putting our new skills to good use.
 Today’s aim
 We’re going to draw a “wavy” line using 300 circles.  Thanks to our knowledge of loops and variables, this won’t take 300 lines of code.
-The first circle
+
+##The first circle
+
 Type this into the editor, on the line under where it says “your code here”.  It will produce your first circle.
 
 
@@ -40,13 +42,13 @@ Can you find:
 ##Lots of circles
 Now, let’s use a loop to draw all 300 of our circles.  They will make a straight line - not a wavy one, yet, but it’s a start.
 
-
+```js
  for (var i = 0; i < 300; i = i + 1) {
     var circle = new Circle(10 + i, 150, 5);
     circle.stroke("yellow", 2);
     circle.addTo(stage);    
   }
-
+```
 
 Remember: a for loop is like a shortened version of a while loop.
 
@@ -54,25 +56,25 @@ Remember: a for loop is like a shortened version of a while loop.
 Please think about this code, and work out the answers to these questions.  Ask if you need help.
 
 
-What does var i = 0 do?  At what stage is it run?
-What does i < 300 check?  At what stage is it checked?
-What does i = i + 1 do?  At what stage is it run?
-How does the loop know when to stop looping?
-How does the code make sure that each circle is slightly to the right of the one before?
-A wavy line
-We can use Math.sin() to give us a sequence of numbers that form the shape of a wave.
+- What does var i = 0 do?  At what stage is it run?
+- What does i < 300 check?  At what stage is it checked?
+- What does i = i + 1 do?  At what stage is it run?
+- How does the loop know when to stop looping?
+- How does the code make sure that each circle is slightly to the right of the one before?
+- A wavy line
+- We can use Math.sin() to give us a sequence of numbers that form the shape of a wave.
 
 
 Don’t worry too much about what it means - just know that we will use it to generate numbers that go up and down between 50 and 250, and use these are the y-coordinates of our circles. Change your code as follows:
 
-
+```js
 for (var i = 0; i < 300; i = i + 1) {
     var yCoordinate = 150 + Math.sin(i / 100 * 2 * Math.PI) * 100;
     var circle = new Circle(10 + i * 1.43, yCoordinate, 5);
     circle.stroke("yellow", 2);
     circle.addTo(stage);    
 }
-
+```
 
 Can you see what change we made to turn the line from a straight one to a wavy one?
 i.e. in terms of code; don’t worry about the maths too much.
@@ -80,16 +82,18 @@ i.e. in terms of code; don’t worry about the maths too much.
 
 We can space the circles out a bit on the x-axis, too.  Change the third line to this - it will stretch the line out a bit.
 
-
+```js
     var circle = new Circle(10 + i * 1.43, yCoordinate, 5);
+```
 
+- Try changing the number 1.43 to something else and see what happens.
+- Can you figure out why it stretches the line out?
 
-Try changing the number 1.43 to something else and see what happens.
-Can you figure out why it stretches the line out?
-Multi-colours
+##Multi-colours
+
 Let’s make an array of colours and use it to make the line a bit prettier.  Change your loop code to this:
 
-
+```js
 var colours = ["red", "blue", "orange"];
 for (var i = 0; i < 300; i = i + 1) {
     var yCoordinate = 150 + Math.sin(i / 100 * 2 * Math.PI) * 100;
@@ -105,11 +109,13 @@ for (var i = 0; i < 300; i = i + 1) {
     circle.stroke(colour, 2);
     circle.addTo(stage);
 }
+```
 
 
-The additions and changes are highlighted in yellow.
-Can you make it so that there are four different colours instead of three?
-Animating it!
+- Can you make it so that there are four different colours instead of three?
+
+#Animating it!
+
 Just for fun, we’ll now animate our wavy line so that it looks like it is being drawn on the screen.
 
 
@@ -118,7 +124,7 @@ To do this, instead of adding all our circles to the stage straight-away, we’l
 
 So, change your loop code to this:
 
-
+```js
 var colours = ["red", "blue", "orange"];
 var circles = [];
 for (var i = 0; i < 300; i = i + 1) {
@@ -143,12 +149,11 @@ setTimeout(function drawNext() {
         setTimeout(drawNext, 10);
     }
 }, 10);
+```
 
 
-Again, the changes are highlighted in yellow.
 
-
-How does it work?
+##How does it work?
 
 
 .push is a way to add an extra item onto the end of an array
@@ -156,7 +161,9 @@ How does it work?
 setTimeout is a way to wait for some time before running some code
 NB: in the code above, ‘10’ tells the computer to wait 10 milliseconds before running the code.  How might you speed up or slow down the animation?  Have a go!
 function is a block of code, usually with a name.  You will learn about it later in the course.
-Finishing off
+
+##Finishing off
+
 Have a play with the colours and timings, and write a quick blog when you are ready, about what you did.
 
 
