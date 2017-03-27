@@ -1,6 +1,6 @@
-#Javascript - Lesson 3: Control Flow
+# Javascript - Lesson 3: Control Flow
 
-##Getting started
+## Getting started
 
 Go to http://editor.blueshiftcoding.com.
 
@@ -8,7 +8,7 @@ At the top of the screen, make sure that JavaScript and Output are selected.  Yo
 
 Click ‘Set Template’ and choose ‘Lesson 3 – Flow Control’.
 
-##Making the Game
+## Making the Game
 
 ```js
 while (tries < 3 && !defused) {
@@ -32,7 +32,7 @@ Here are some things you can try:
 - Can you give yourself more tries (or fewer!)?
 - Can you change the messages?
 
-##More On Loops
+## More On Loops
 
 The word ‘while’ asks Javascript to repeat some code over and over.  Look more closely:
 
@@ -74,7 +74,7 @@ Can you see out how it works?
 
 Hint: word[0] is the first letter in a word; word[1] is the second; word[2] is the third, etc.
 
-##A shortcut
+## A shortcut
 
 Instead of ```js i = i + 1``` you can use any of the following to do the same thing.  Try swapping these into the loops above, in the right place.
 
@@ -83,7 +83,7 @@ i += 1;
 i++;
 ++i;
 ```
-##For Loops
+## For Loops
 
 To save yourself some typing, you can often write loops using for instead of while.  Have a look; this loop counts from 1 to 10.
 
