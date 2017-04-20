@@ -1,8 +1,8 @@
 
-#Revision - more graphics!
+# Revision - more graphics!
 
 
-##Getting started
+## Getting started
 Go to http://editor.blueshiftcoding.com.
 
 
@@ -18,7 +18,7 @@ In particular, we will be doing some things that would take a lot of typing were
 Today’s aim
 We’re going to draw a “wavy” line using 300 circles.  Thanks to our knowledge of loops and variables, this won’t take 300 lines of code.
 
-##The first circle
+## The first circle
 
 Type this into the editor, on the line under where it says “your code here”.  It will produce your first circle.
 
@@ -39,7 +39,7 @@ Can you find:
 - What do you think the second line does?
 - And the third line?
 
-##Lots of circles
+## Lots of circles
 Now, let’s use a loop to draw all 300 of our circles.  They will make a straight line - not a wavy one, yet, but it’s a start.
 
 ```js
@@ -89,7 +89,7 @@ We can space the circles out a bit on the x-axis, too.  Change the third line to
 - Try changing the number 1.43 to something else and see what happens.
 - Can you figure out why it stretches the line out?
 
-##Multi-colours
+## Multi-colours
 
 Let’s make an array of colours and use it to make the line a bit prettier.  Change your loop code to this:
 
@@ -114,7 +114,7 @@ for (var i = 0; i < 300; i = i + 1) {
 
 - Can you make it so that there are four different colours instead of three?
 
-#Animating it!
+# Animating it!
 
 Just for fun, we’ll now animate our wavy line so that it looks like it is being drawn on the screen.
 
@@ -153,16 +153,16 @@ setTimeout(function drawNext() {
 
 
 
-##How does it work?
+## How does it work?
 
 
-.push is a way to add an extra item onto the end of an array
-.shift is a way to take the first item off an array, and use it
-setTimeout is a way to wait for some time before running some code
+.push() is a way to add an extra item onto the end of an array
+.shift() is a way to take the first item off an array, and use it
+setTimeout() is a way to wait for some time before running some code
 NB: in the code above, ‘10’ tells the computer to wait 10 milliseconds before running the code.  How might you speed up or slow down the animation?  Have a go!
 function is a block of code, usually with a name.  You will learn about it later in the course.
 
-##Finishing off
+## Finishing off
 
 Have a play with the colours and timings, and write a quick blog when you are ready, about what you did.
 
