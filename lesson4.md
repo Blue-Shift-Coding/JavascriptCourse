@@ -8,7 +8,7 @@ At the top of the screen, make sure that JavaScript and Console are selected. Yo
 Click ‘Set Template’ and choose ‘Lesson 4 - arrays and functions’.
 
 
-##Arrays
+## Arrays
 
 An array is a data structure which can store a list of values. You can create one by putting a list of comma separated values between square brackets:
 
@@ -52,7 +52,7 @@ console.log(names[1]);
 ```
 What do you get, and is it what you expected? How do you think we might actually get the first element of the array?
 
-##More On Loops
+## More On Loops
 
 Let’s include our knowledge of loops with what we just learned about arrays. First let’s quickly refresh our knowledge of loops. 
 
@@ -98,7 +98,7 @@ i += 1;
 i++;
 ++i;
 ```
-##For Loops
+## For Loops
 
 To save yourself some typing, you can often write loops using for instead of while.  Have a look; this loop counts from 1 to 10.
 ```js
@@ -117,5 +117,5 @@ for (initialisation; condition; increment) {
 - The increment happens between each iteration.
 
 If you have time, why not try to convert some of our earlier while-loops above into for-loop format?
-##Publish
+## Publish
 Save your new work as well. Now click ‘Blog this Code’, and write a few sentences about what you did.
